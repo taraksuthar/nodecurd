@@ -24,6 +24,7 @@ router.post("/add", (req, res) => {
     user.username = req.body.un;
     user.password = req.body.email;
     user.email = req.body.pwd;
+    user.save();
 });
 
 
